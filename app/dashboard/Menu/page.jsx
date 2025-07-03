@@ -244,7 +244,6 @@ const EditModal = memo(
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg text-gray-600 focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                   required
                   min="0"
-                  step="0.01"
                 />
               </div>
 
@@ -475,9 +474,6 @@ export default function Menu() {
 
       // Add "All" category at the beginning
       const allCategories = ["All", ...categoriesData];
-      if (allCategories === "Categories") {
-        const categories = allCategories.slice;
-      }
       setCategories(allCategories);
       setDataFetched(true);
     } catch (err) {
