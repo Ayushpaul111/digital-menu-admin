@@ -41,7 +41,7 @@ export default function Dashboard() {
         <main className="flex-1 p-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Dashboard</h2>
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            <Card title="Users" value="1,240" />
+            <Card title="Orders" value="1,240" />
             <Card title="Revenue" value="$32,500" />
             <Card title="Sessions" value="4,918" />
           </div>
