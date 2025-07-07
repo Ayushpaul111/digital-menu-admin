@@ -38,7 +38,7 @@ export const DashboardLayout = memo(
       <BaseLayout className={className}>
         <div className="flex h-screen overflow-hidden">
           {/* Sidebar - Always rendered, visibility controlled by CSS */}
-          <div className="hidden md:block md:w-64 flex-shrink-0">
+          <div className="hidden md:block md:w-64 flex-shrink-0 bg-white border-r border-gray-200">
             <Sidebar
               isOpen={true} // Always open on desktop
               onClose={sidebar.close}

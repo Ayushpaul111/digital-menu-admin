@@ -9,12 +9,7 @@ interface TopBarProps {
 
 export const TopBar = memo(({ title, onMenuClick }: TopBarProps) => {
   return (
-    <motion.header
-      className="sticky top-0 z-10 bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-200/50 p-4 flex items-center justify-between md:justify-end"
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.3 }}
-    >
+    <motion.header className="sticky top-0 z-10 bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-200/50 p-4 flex items-center justify-between md:justify-end">
       <motion.button
         className="md:hidden text-gray-700 hover:text-gray-900 p-2 rounded-lg hover:bg-gray-100"
         onClick={onMenuClick}

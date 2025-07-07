@@ -90,7 +90,7 @@ export const Sidebar = memo(({ isOpen, onClose, onToggle }: SidebarProps) => {
         `}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-gray-200">
+        <div className="flex items-center justify-between p-[13px] border-b border-gray-200">
           <motion.h2
             className="text-xl font-semibold text-purple-700"
             whileHover={{ scale: 1.02 }}
@@ -116,7 +116,7 @@ export const Sidebar = memo(({ isOpen, onClose, onToggle }: SidebarProps) => {
         </div>
 
         {/* Navigation */}
-        <nav className="p-4 space-y-2 flex-1">
+        <nav className="p-4 space-y-2 flex-1 border-r border-gray-200">
           {sidebarItems.map((item, index) => (
             <motion.div
               key={item.id}
