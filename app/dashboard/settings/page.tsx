@@ -1,5 +1,5 @@
 "use client";
-import { memo, useState } from "react";
+import { memo } from "react";
 import { motion } from "framer-motion";
 import { DashboardLayout } from "../../components/layout/DashboardLayout";
 import { PageHeader } from "../../components/ui/PageHeader";
@@ -25,8 +25,6 @@ const SettingsCard = memo(
 SettingsCard.displayName = "SettingsCard";
 
 export default function Settings() {
-  const [theme, setTheme] = useState("light");
-
   return (
     <DashboardLayout title="Settings">
       <PageHeader
@@ -39,36 +37,45 @@ export default function Settings() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <SettingsCard title="Account Settings">
+        <SettingsCard title="Support & Contact">
           <p className="text-gray-600 mb-4">
-            Configure your account preferences here.
+            Reach out to us for any help or support.
           </p>
 
           <div className="space-y-4">
             <div>
-              <label className="block text-gray-700 text-sm font-medium mb-2">
-                Theme
-              </label>
-              <motion.select
-                className="w-full max-w-xs p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-gray-700"
-                value={theme}
-                onChange={(e) => setTheme(e.target.value)}
-                whileFocus={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300, damping: 10 }}
+              <p className="text-sm text-gray-700 font-medium">Call Us</p>
+              <a
+                href="tel:+919064995568"
+                className="text-purple-600 hover:underline text-base"
               >
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-                <option value="auto">Auto</option>
-              </motion.select>
+                +91 9064995568
+              </a>
             </div>
 
-            <motion.button
-              className="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors duration-200"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Save Changes
-            </motion.button>
+            <div>
+              <p className="text-sm text-gray-700 font-medium">WhatsApp</p>
+              <a
+                href={`https://wa.me/9064995568?text=${encodeURIComponent(
+                  `Support needed for admin`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition-colors duration-200"
+              >
+                Chat on WhatsApp
+              </a>
+            </div>
+
+            <div>
+              <p className="text-sm text-gray-700 font-medium">Email</p>
+              <a
+                href="ayushpaul1111@gmail.com"
+                className="text-purple-600 hover:underline text-base"
+              >
+                ayushpaul1111@gmail.com
+              </a>
+            </div>
           </div>
         </SettingsCard>
       </motion.div>

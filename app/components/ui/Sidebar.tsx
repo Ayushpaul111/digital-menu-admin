@@ -90,7 +90,7 @@ export const Sidebar = memo(({ isOpen, onClose, onToggle }: SidebarProps) => {
         `}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-[13px] border-b border-gray-200">
+        <div className="flex items-center justify-between p-[16.7px] border-b border-gray-200">
           <motion.h2
             className="text-xl font-semibold text-purple-700"
             whileHover={{ scale: 1.02 }}
