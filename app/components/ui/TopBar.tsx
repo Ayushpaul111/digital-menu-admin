@@ -24,7 +24,7 @@ export const TopBar = memo(({ title, onMenuClick }: TopBarProps) => {
     return email.split("@")[0];
   };
   return (
-    <motion.header className="sticky top-0 z-10 bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-200/50 p-4 flex items-center justify-between md:justify-end">
+    <div className="sticky top-0 z-10 bg-white/80 backdrop-blur-lg shadow-sm border-b border-gray-200/50 p-4 flex items-center justify-between">
       <motion.button
         className="md:hidden text-gray-700 hover:text-gray-900 p-2 rounded-lg hover:bg-gray-100"
         onClick={onMenuClick}
@@ -34,7 +34,7 @@ export const TopBar = memo(({ title, onMenuClick }: TopBarProps) => {
         <Menu size={20} />
       </motion.button>
 
-      <div className="flex items-center w-full justify-between">
+      <div className="flex items-center md:w-full justify-between">
         <motion.h1
           className="hidden md:block font-semibold text-gray-800 text-xl"
           initial={{ opacity: 0 }}
@@ -59,7 +59,7 @@ export const TopBar = memo(({ title, onMenuClick }: TopBarProps) => {
           </div>
         </div>
       </div>
-    </motion.header>
+    </div>
   );
 });
 
