@@ -5,7 +5,7 @@ import { TopBar } from "../ui/TopBar";
 import { BaseLayout } from "./BaseLayout";
 import { useAuth } from "../../hooks/useAuth";
 import { useSidebar } from "../../hooks/useSidebar";
-import type { LayoutProps } from "../../types/layout";
+import type { LayoutProps } from "../../../types/layout";
 
 interface DashboardLayoutProps extends LayoutProps {
   title: string;
