@@ -5,14 +5,14 @@ import { DashboardLayout } from "../../components/layout/DashboardLayout";
 import { PageHeader } from "../../components/ui/PageHeader";
 
 const SettingsCard = memo(
-  ({ children, title }: { children: React.ReactNode, title: string }) => (
+  ({ children, title }: { children: React.ReactNode; title: string }) => (
     <motion.div
       className="bg-white shadow-sm rounded-xl p-6"
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4 }}
       whileHover={{
-        shadow: "0 10px 25px -3px rgba(0, 0, 0, 0.1)",
+        boxShadow: "0 10px 25px -3px rgba(0, 0, 0, 0.1)",
         transition: { duration: 0.2 },
       }}
     >

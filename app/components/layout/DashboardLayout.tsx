@@ -1,4 +1,4 @@
-import { ReactNode, memo } from "react";
+import { memo } from "react";
 import { motion } from "framer-motion";
 import { Sidebar } from "../ui/Sidebar";
 import { TopBar } from "../ui/TopBar";

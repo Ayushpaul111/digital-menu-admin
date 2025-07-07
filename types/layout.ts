@@ -18,3 +18,14 @@ export interface UserSession {
   userSession: string | null;
   isLoading: boolean;
 }
+
+export type FoodItem = {
+  id: string | number;
+  title: string;
+  description: string;
+  price: number;
+  image: string;
+  rating: number;
+  category: string;
+  isVeg: boolean;
+};

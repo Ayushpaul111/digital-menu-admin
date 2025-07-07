@@ -6,13 +6,14 @@ import { DashboardLayout } from "../../components/layout/DashboardLayout";
 import { PageHeader } from "../../components/ui/PageHeader";
 import { LoadingSpinner } from "../../components/ui/LoadingSpinner";
 import { EditModal } from "../../components/ui/EditModal";
+import type { FoodItem } from "../../../types/layout";
 
 // Custom hooks for data fetching
 const useMenuData = () => {
-  const [foodItems, setFoodItems] = useState([]);
+  const [foodItems, setFoodItems] = useState<FoodItem[]>([]);
   const [categories, setCategories] = useState(["All"]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
   const [dataFetched, setDataFetched] = useState(false);
 
   const fetchData = useCallback(async () => {
