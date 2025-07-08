@@ -146,7 +146,9 @@ function Signup() {
           {/* Logo */}
           <div className="mb-8">
             <div className="w-20 h-12 rounded-lg flex items-center justify-center mb-6">
-              <img src="./ehike.png" alt="logo" className="w-full" />
+              <a href="/">
+                <img src="./ehike.png" alt="logo" className="w-full" />
+              </a>
             </div>
             <h1 className="text-2xl font-semibold text-gray-900 mb-2">
               Get Started
@@ -259,7 +261,7 @@ function Signup() {
             </button>
 
             {/* Google Sign Up Button */}
-            <button
+            {/* <button
               type="button"
               disabled={isLoading}
               className="w-full bg-white text-gray-700 py-2 px-4 rounded-md border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition duration-200 font-medium flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -283,7 +285,7 @@ function Signup() {
                 />
               </svg>
               <span>Sign up with Google</span>
-            </button>
+            </button> */}
           </form>
 
           {/* Terms and Conditions */}

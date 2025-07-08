@@ -96,13 +96,15 @@ export const Sidebar = memo(({ isOpen, onClose, onToggle }: SidebarProps) => {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            <img
-              src="https://www.ehike.in/assets/logo-BSbxCYFZ.png"
-              alt="Ehike logo"
-              width={100}
-              height={100}
-              className="object-contain"
-            />
+            <a href="/dashboard">
+              <img
+                src="https://www.ehike.in/assets/logo-BSbxCYFZ.png"
+                alt="Ehike logo"
+                width={100}
+                height={100}
+                className="object-contain"
+              />
+            </a>
           </motion.h2>
 
           <motion.button
